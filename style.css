@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  background: linear-gradient(#242333 20%, #2e2e39, #3a3946);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "lato", sans-serif;
+}
+
+.room-front,
+.room-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letters p {
+  margin: 2.5px;
+  color: #bcbcbc;
+  text-align: center;
+}
+
+.room-front .letters:nth-of-type(1) {
+  margin-right: 72px;
+}
+
+.room-front .letters:nth-of-type(3) {
+  margin-left: 72px;
+}
+
+.room-middle .letters:nth-of-type(1) {
+  margin-right: 17px;
+}
+
+.room-middle .letters:nth-of-type(3) {
+  margin-left: 17px;
+}
+
+.container {
+  /* Perspective only works when we use rotateX */
+  perspective: 1000px;
+  margin-bottom: 15px;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  font-size: 14px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  /* these three guys below are here to enable the padding above to work in all browsers others than windows machines*/
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background: #fff;
+  width: 400px;
+  height: 130px;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  margin: 15px 0;
+  margin-left: 68px;
+  margin-bottom: 40px;
+}
+
+.showcase {
+  display: flex;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: rgb(188, 188, 188);
+  margin-top: 5px;
+}
+
+.showcase li {
+  list-style-type: none;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.seat {
+  background: #444451;
+  width: 16px;
+  height: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 3px;
+}
+
+.room-front {
+  margin-bottom: 30px;
+}
+
+.room-middle .seat:nth-of-type(2) {
+  margin-right: 15px;
+}
+
+.room-middle .seat:nth-last-of-type(2) {
+  margin-left: 15px;
+}
+
+.seat.occupied {
+  background: #fff;
+}
+
+.seat.selected {
+  background: #ff0096;
+}
+
+.container .seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+p.text {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+p.text span {
+  color: #ff0096;
+}
+
+.seatLetterId {
+  color: #ff0096;
+}
+
+.seats-display-container {
+  width: 533px;
+}

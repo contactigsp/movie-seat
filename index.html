@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tests</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label>Pick a movie: </label>
+      <select id="movie">
+        <option value="12">movie 1</option>
+        <option value="10">movie 2</option>
+        <option value="8">movie 3</option>
+        <option value="14">movie 4</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="room-front">
+        <div class="letters">
+          <p>A</p>
+          <p>B</p>
+          <p>C</p>
+          <p>D</p>
+        </div>
+
+        <div class="rows">
+          <div class="row" id="A"></div>
+          <div class="row" id="B"></div>
+          <div class="row" id="C"></div>
+          <div class="row" id="D"></div>
+        </div>
+
+        <div class="letters">
+          <p>A</p>
+          <p>B</p>
+          <p>C</p>
+          <p>D</p>
+        </div>
+      </div>
+
+      <div class="room-middle">
+        <div class="letters">
+          <p>E</p>
+          <p>F</p>
+          <p>G</p>
+          <p>H</p>
+          <p>I</p>
+          <p>J</p>
+          <p>K</p>
+          <p>L</p>
+        </div>
+
+        <div class="rows">
+          <div class="row" id="E"></div>
+          <div class="row" id="F"></div>
+          <div class="row" id="G"></div>
+          <div class="row" id="H"></div>
+          <div class="row" id="I"></div>
+          <div class="row" id="J"></div>
+          <div class="row" id="K"></div>
+          <div class="row" id="L"></div>
+        </div>
+
+        <div class="letters">
+          <p>E</p>
+          <p>F</p>
+          <p>G</p>
+          <p>H</p>
+          <p>I</p>
+          <p>J</p>
+          <p>K</p>
+          <p>L</p>
+        </div>
+      </div>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of $<span
+        id="total"
+        >0</span
+      >.
+    </p>
+
+    <div class="seats-display-container">
+      <h1 class="selectedSeatsDisplay"></h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
